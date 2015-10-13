@@ -14,6 +14,8 @@
 		C90F6BCA1A9A341E00128AAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90F6BC91A9A341E00128AAB /* Images.xcassets */; };
 		C90F6BCD1A9A341E00128AAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F6BCB1A9A341E00128AAB /* LaunchScreen.xib */; };
 		C90F6BD91A9A341E00128AAB /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F6BD81A9A341E00128AAB /* CalculatorTests.m */; };
+		C951EB9F1A9D16CE007CFD82 /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = C951EB9E1A9D16CE007CFD82 /* Brain.m */; };
+		C9B9A6241A9EAD2000C6445B /* TapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B9A6231A9EAD2000C6445B /* TapeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +35,17 @@
 		C90F6BC01A9A341E00128AAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C90F6BC11A9A341E00128AAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C90F6BC31A9A341E00128AAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C90F6BC41A9A341E00128AAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C90F6BC41A9A341E00128AAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C90F6BC71A9A341E00128AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C90F6BC91A9A341E00128AAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C90F6BCC1A9A341E00128AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C90F6BD21A9A341E00128AAB /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90F6BD71A9A341E00128AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C90F6BD81A9A341E00128AAB /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		C951EB9D1A9D16CE007CFD82 /* Brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brain.h; sourceTree = "<group>"; };
+		C951EB9E1A9D16CE007CFD82 /* Brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brain.m; sourceTree = "<group>"; };
+		C9B9A6221A9EAD2000C6445B /* TapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapeViewController.h; sourceTree = "<group>"; };
+		C9B9A6231A9EAD2000C6445B /* TapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 		C90F6BBB1A9A341E00128AAB /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C9B9A6221A9EAD2000C6445B /* TapeViewController.h */,
+				C9B9A6231A9EAD2000C6445B /* TapeViewController.m */,
+				C951EB9D1A9D16CE007CFD82 /* Brain.h */,
+				C951EB9E1A9D16CE007CFD82 /* Brain.m */,
 				C90F6BC01A9A341E00128AAB /* AppDelegate.h */,
 				C90F6BC11A9A341E00128AAB /* AppDelegate.m */,
 				C90F6BC31A9A341E00128AAB /* ViewController.h */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B9A6241A9EAD2000C6445B /* TapeViewController.m in Sources */,
 				C90F6BC51A9A341E00128AAB /* ViewController.m in Sources */,
 				C90F6BC21A9A341E00128AAB /* AppDelegate.m in Sources */,
+				C951EB9F1A9D16CE007CFD82 /* Brain.m in Sources */,
 				C90F6BBF1A9A341E00128AAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +424,7 @@
 				C90F6BDE1A9A341E00128AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C90F6BDF1A9A341E00128AAB /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				C90F6BE11A9A341E00128AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

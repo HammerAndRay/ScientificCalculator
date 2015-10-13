@@ -7,9 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Brain.h"
+    NSString * Tape;
+    NSString * TapeBuffer;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    IBOutlet UILabel *LabelActiveCal;
+    IBOutlet UILabel *LabelNonActiveCal;
+    Brain * SendToBrain;
+    Boolean InTheMiddleOfTyping;
+    Boolean DecimalPressed;
+    Boolean IsRadOn;
+    Boolean OppPressed;
+    Boolean numberpressed;
+    NSNumber * ConvertDouble;
 
+    __weak IBOutlet UILabel *LabelActiveCalLand;
+    __weak IBOutlet UILabel *LabelNonActiveCalLand;
+}
 
 @end
 
